@@ -1,0 +1,85 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+    Currently working as a Junior Research Fellow at the Indian Institute of Technology, Roorkee, India. My interdisciplinary work interests have given me molecular, biochemical, structural, and computational insights in diagnosis and therapeutic targeting of disease-focused translational research. I have a strong biological background and am passionate about integrating experimental and computational approaches to address complex biological questions.
+  </p>
+  <p>
+    My current research uses an AI and structure-based approach to discover broad-spectrum antivirals against emerging viruses. I integrate molecular cloning, protein expression, structural biology, and virtual screening to translate molecular insights into therapeutic candidates.
+  </p>
+</div>
+
+<div class="docs-section" id="research">
+  <h4>Research Work</h4>
+
+  <div class="paper">
+    <p class="title"><b>Junior Research Fellow</b> — Indian Institute of Technology, Roorkee</p>
+    <p><i>July 2025 – Present</i></p>
+    <p>Artificial Intelligence and Structure-based Approach to discover Broad Spectrum Antivirals against Emerging Viruses (Pan-alphaviruses & Pan-flaviviruses), funded by DRDO.</p>
+    <ul>
+      <li>Investigating Zika virus capsid protein with molecular cloning, protein expression, purification, mutagenesis, and enzyme activity assays.</li>
+      <li>Combining experimental biology with docking, molecular simulations, and virtual screening to target RNA-binding sites.</li>
+    </ul>
+  </div>
+
+  <div class="paper">
+    <p class="title"><b>Master's Thesis</b> — AIIMS, Delhi</p>
+    <p><i>May 2023 – Mar 2024</i></p>
+    <p>Studied host-pathogen interactions and susceptibility to secondary microbial infections in COVID-19 recovered individuals using transcriptomic and pathway analysis.</p>
+  </div>
+
+  <div class="paper">
+    <p class="title"><b>Research Intern</b> — IIT, Indore</p>
+    <p><i>June 2021 – Aug 2021</i></p>
+    <p>Reviewed biodegradable PEG-PCL nanomedicines, studying nanoparticle synthesis, drug loading, delivery mechanisms, and polymer-based drug carriers.</p>
+  </div>
+</div>
+
+<div class="docs-section" id="skills">
+  <h4>Skills</h4>
+  <p><strong>Biochemistry:</strong> recombinant protein expression and purification, His-tag affinity purification, size exclusion chromatography (AKTA Prime), SDS-PAGE, Western blotting, enzyme kinetics.</p>
+  <p><strong>Molecular Biology:</strong> DNA/RNA isolation, plasmid preparation, molecular cloning, transformation, PCR, qPCR, site-directed mutagenesis, gel electrophoresis.</p>
+  <p><strong>Bioinformatics:</strong> pathway analysis using KEGG and STRING, virtual screening, molecular docking, AutoDock (Vina and 4.2), PyMOL, molecular dynamics simulations, AlphaFold, homology modeling.</p>
+  <p><strong>Cell Biology & Immunology:</strong> PBMC isolation, cell culture, infection assays, plaque assay, ELISA, immunological assays.</p>
+</div>
+
+<div class="docs-section" id="education">
+  <h4>Experience</h4>
+
+  <!-- The Timeline (combined work and education) -->
+  <ul class="timeline">
+    {% assign all_exps = site.data.experience.experiences %}
+    {% for exp in all_exps %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br /> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="docs-section" id="about">
+  <h4>About Me</h4>
+  <p>
+    When I first encountered biology in school, I was fascinated by how invisible molecular processes coordinate to drive cellular life. That fascination grew into a desire to understand how biological systems respond to stress and reorganize regulatory networks to shape cellular outcomes.
+  </p>
+  <p>
+    My academic training has been interdisciplinary, centered on how biological information flows from molecular regulation to cellular function. During my master’s dissertation at AIIMS Delhi, I investigated RNA-level regulation and host susceptibility to infection, gaining experience in PBMC isolation, RNA extraction, cDNA synthesis, cell culture, infection assays, and transcriptomic pathway analysis.
+  </p>
+  <p>
+    Today, I am focused on RNA-binding proteins and antiviral discovery, combining experimental and computational methods. I am motivated to pursue research on stress-induced RNA processing and intron regulation, with an emphasis on understanding how dynamic post-transcriptional programs shape cellular adaptation.
+  </p>
+</div>
